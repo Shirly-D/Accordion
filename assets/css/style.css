@@ -122,6 +122,9 @@ ul {
   margin: 65px auto;
 }
 
+li:first-child { margin-top: 0; }
+li { margin-top: 20px; }
+
 .accord {
   padding: 20px;
   border-bottom: 1px solid #e7e7e7;
@@ -137,6 +140,8 @@ ul {
 
 .accord::after {
   content: "\f067";
+  height: 80px;
+  padding: 20px;
   color: #787777;
   font-family: "FontAwesome";
   float: right;
@@ -152,7 +157,6 @@ ul {
 
 .content {
   max-height: 0;
-  padding: 20px;
   background-color: #E9967A;
   color: #FCDFB2;
   font-size: 17px;
