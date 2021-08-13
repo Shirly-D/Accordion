@@ -100,25 +100,67 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 90%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
 =================================*/
+
+h2 {
+  padding: 20px 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+ul {
+  width: 50%;
+  margin: 65px auto;
+}
+
+.accord {
+  padding: 20px;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.active,
+.accord:hover {
+  background-color: #F5F5DC;
+  color: #DF8F7D;
+}
+
+.accord::after {
+  content: "\f067";
+  color: #787777;
+  font-family: "FontAwesome";
+  float: right;
+}
+
+.active::after { 
+  content: "\f00d";
+  font-family: "FontAwesome";
+  transform:  rotate(90deg);
+ }
+
+.accord::first-letter { text-transform: capitalize; }
+
+.content {
+  max-height: 0;
+  padding: 20px;
+  background-color: #E9967A;
+  color: #FCDFB2;
+  font-size: 17px;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+
+
 
 
 
@@ -130,25 +172,4 @@ li {
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+ 
