@@ -122,8 +122,11 @@ ul {
   margin: 65px auto;
 }
 
-li:first-child { margin-top: 0; }
-li { margin-top: 20px; }
+.accord-box:first-child { margin-top: 0; }
+
+.accord-box { 
+  margin-top: 20px; 
+}
 
 .accord {
   padding: 20px;
@@ -132,7 +135,7 @@ li { margin-top: 20px; }
   transition: 0.3s;
 }
 
-.active,
+
 .accord:hover {
   background-color: #F5F5DC;
   color: #DF8F7D;
@@ -147,7 +150,7 @@ li { margin-top: 20px; }
   float: right;
 }
 
-.active::after { 
+.accord-box.active .accord::after { 
   content: "\f00d";
   font-family: "FontAwesome";
   transform:  rotate(90deg);
