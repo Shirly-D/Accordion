@@ -135,7 +135,7 @@ ul {
   transition: 0.3s;
 }
 
-
+.active,
 .accord:hover {
   background-color: #F5F5DC;
   color: #DF8F7D;
