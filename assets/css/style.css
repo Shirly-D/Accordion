@@ -144,11 +144,13 @@ ul {
 .accord::after {
   content: "\f067";
   height: 80px;
-  padding: 20px;
   color: #787777;
   font-family: "FontAwesome";
   float: right;
+  transform: translateY(-50%);
 }
+
+.accord-box.active .content { height: 80px; }
 
 .accord-box.active .accord::after { 
   content: "\f00d";
@@ -159,12 +161,13 @@ ul {
 .accord::first-letter { text-transform: capitalize; }
 
 .content {
-  max-height: 0;
+  height: 0;
   background-color: #E9967A;
   color: #FCDFB2;
   font-size: 17px;
-  transition: max-height 0.5s ease-out;
+  transition: 0.5s ease-out;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 
