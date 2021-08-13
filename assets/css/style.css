@@ -122,8 +122,11 @@ ul {
   margin: 65px auto;
 }
 
-li:first-child { margin-top: 0; }
-li { margin-top: 20px; }
+.accord-box:first-child { margin-top: 0; }
+
+.accord-box { 
+  margin-top: 20px; 
+}
 
 .accord {
   padding: 20px;
@@ -132,7 +135,7 @@ li { margin-top: 20px; }
   transition: 0.3s;
 }
 
-.active,
+
 .accord:hover {
   background-color: #F5F5DC;
   color: #DF8F7D;
@@ -141,13 +144,15 @@ li { margin-top: 20px; }
 .accord::after {
   content: "\f067";
   height: 80px;
-  padding: 20px;
   color: #787777;
   font-family: "FontAwesome";
   float: right;
+  transform: translateY(-50%);
 }
 
-.active::after { 
+.accord-box.active .content { height: 80px; }
+
+.accord-box.active .accord::after { 
   content: "\f00d";
   font-family: "FontAwesome";
   transform:  rotate(90deg);
@@ -156,12 +161,13 @@ li { margin-top: 20px; }
 .accord::first-letter { text-transform: capitalize; }
 
 .content {
-  max-height: 0;
+  height: 0;
   background-color: #E9967A;
   color: #FCDFB2;
   font-size: 17px;
-  transition: max-height 0.5s ease-out;
+  transition: 0.5s ease-out;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 
