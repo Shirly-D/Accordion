@@ -147,15 +147,18 @@ ul {
   color: #787777;
   font-family: "FontAwesome";
   float: right;
-  transform: translateY(-50%);
 }
 
-.accord-box.active .content { height: 80px; }
+.accord-box.active .content { 
+  height: 60px;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
 
 .accord-box.active .accord::after { 
   content: "\f00d";
   font-family: "FontAwesome";
-  transform:  rotate(90deg);
  }
 
 .accord::first-letter { text-transform: capitalize; }
@@ -167,7 +170,6 @@ ul {
   font-size: 17px;
   transition: 0.5s ease-out;
   overflow: hidden;
-  overflow-y: auto;
 }
 
 
